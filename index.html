@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body  font-family="Lato" bgcolor="pink">
+    <h1>Environments</h1>
+    <p>This page contains all the environment details including the URLs of various environments</p>
+	<p>Click on the links inside the tabbed menu:</p>
+	
+	  <ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openEnv(event, 'STAR')">STAR</a></li>
+  <li><a href="#" class="tablinks" onclick="openEnv(event, 'MAP')">MAP</a></li>
+  <li><a href="#" class="tablinks" onclick="openEnv(event, 'ECAMPUS')">ECAMPUS</a></li>
+   <li><a href="#" class="tablinks" onclick="openEnv(event, 'DEGREEWORKS')">DEGREEWORKS</a></li>
+</ul>
+
+<div id="STAR" class="tabcontent">
+  
+<p>
+<table  border "1" class "table">
+  <tr>
+    <th>DEV</th>
+    <th>TEST</th>
+    <th>PATCH</th>
+	<th>PROD</th>
+  </tr>
+  
+<tr>
+<td><a href= "http://bepdev.systems.wvu.edu:7002/console/">BepDev WebCon   </a></td>
+<td></td>
+<td> <a href="http://beptch1.systems.wvu.edu:7000/console">BepPtch WebCon</a></td>
+<td><a href="http://beprod1.systems.wvu.edu:7000/console ">BepProd WebCon</a></td>
+</tr>
+ 
+ <tr>
+ <td><a href="http://stardev-wls.systems.wvu.edu:7001/console ">BanDev Forms WebCon </a> </td>
+<td> <a href="http://startest-wls.systems.wvu.edu:7001/console ">BanTest Forms WebCon</a> </td>
+<td><a href ="http://starptch1-wls.systems.wvu.edu:7001/console">BanPtch Forms WebCon </a></td>
+<td><a href = "http://starprod1-wls.systems.wvu.edu:7001/console ">BanProd Forms WebCon </a></td>
+</tr>
+
+<tr>
+<td> <br><a href ="http://stardev-wls.systems.wvu.edu:7002/console">BanDev PCI WebCon</a></br></td>
+<td><br><a href ="http://startest-wls.systems.wvu.edu:7002/console">BanTest PCI WebCon</a></br></td>
+<td><br><a href="http://starptch1-wls.systems.wvu.edu:7002/console">BanPtch PCI WebCon </a></br></td>
+<td><br> <a href="http://starprod1-wls.systems.wvu.edu:7002/console">BanProd PCI WebCon </a></br></td>
+</tr>
+
+<tr>
+<td><br><a href="http://stardev-wls.systems.wvu.edu:7007/console ">Beisdev WebCon </a> </br></td>
+<td></td>
+<td><br><a href="http://beptch7.systems.wvu.edu:7007/console">BeisPtch </a></br></td>
+<td> <br><a href="http://beprodapp7.systems.wvu.edu:7007/console">BeisProd</a></br></td>
+</tr>
+  
+<tr>
+<td><br><a href="http://stardev-wls.systems.wvu.edu:7000/console">BandevXe WebCon</a></br></td>
+<td> </td>
+<td><a href="http://beptch3.systems.wvu.edu:700/console">BanptchXe WebCon </a></td>
+<td> <br><a href="http://beprodapp3.systems.wvu.edu:7000/console/">BanprodXe WebCon</a></br></td>
+</tr>
+  
+<tr>
+<td> <br><a href="http://wfdev-wls.systems.wvu.edu:7002/console/">Wfev WebCon</a></br></td>
+<td><br><a href="https://dgtesttools.wvu.edu/dwshell/login.jsp ">Dgtest Dwshell </a></br></td>
+<td><br><a href="http://wfptch-wls.systems.wvu.edu:7002/console ">WfPtch WebCon </a></br></td>
+<td><br><a href="http://wfprod-wls.systems.wvu.edu:7002/console">WfProd WebCon</a></br></td>
+</tr>
+
+</table>
+</p>
+</div>
+
+<div id="MAP" class="tabcontent">
+  <p><table  border "1" class "table">
+  <tr>
+    <th>SAND</th>
+    <th>DEV</th>
+    <th>TEST</th>
+	<th>FIXIT</th>
+	<th>FINAL</th>
+	<th>PROD</th>
+  </tr>
+  
+  <tr>
+  <td></td>
+  <td></td>
+  <td><a href="http://obtestvm1.systems.wvu.edu:7001/console ">ObTest WebCon </a></td>
+   <td><a href="http://obfixitvm1.systems.wvu.edu:7001/console/">ObFixit WebCon </a></td>
+   <td> </td>
+   <td><a href="http://obprodvm1.systems.wvu.edu:7001/console">ObProd WebCon </a></td>
+    </tr>
+  
+  <tr>
+  <td> <br><a href="http://sandvm1.systems.wvu.edu:7001/console">SOA Sand WebCon</br></a></td>
+  <td></td>
+  <td><a href="http://obtestvm1.systems.wvu.edu:7001/em">ObTest EM</a></td>
+  <td><a href="http://obfixitvm1.systems.wvu.edu:7001/em/">ObFixit EM</a></td>
+   <td><a href="http://finalvm1.systems.wvu.edu:7001/console">SOA Final WebCon</a></td>
+ <td><a href="http://obprodvm1.systems.wvu.edu:7001/em">ObProd EM</a></td>
+  </tr
+  
+  <tr>
+  <td><a href= "http://sandvm1.systems.wvu.edu:7001/em">SOA Sand EM</a> </td>
+  <td></td>
+   <td><a href= "http://testvm1.systems.wvu.edu:7001/console">SOA Test WebCon</a> </td>
+   <td></td>
+    <td><a href= "http://finalvm1.systems.wvu.edu:7001/em">SOA Final EM</a> </td>
+	<td><a href= "http://prodvm1.systems.wvu.edu:7001/console">SOA Prod WebCon</a> </td
+  </tr>
+  
+  <tr>
+  <td><a href="http://lrs-oamapp000.systems.wvu.edu:7001/console">OAM Sand WebCon</a></td>
+   <td><a href="">OID Dev WebCon</a></td>
+    <td><a href="http://testvm1.systems.wvu.edu:7001/em">SOA Test EM</a></td>
+	<td></td>
+	<td></td>
+	 <td><a href="http://prodvm1.systems.wvu.edu:7001/em">SOA Prod EM</a></td>
+  </tr>
+  
+  <tr>
+  <td></td>
+   <td><a href="http://zero.systems.wvu.edu:7001/console">ESEI Dev WebCon</a></td>
+   <td><a href="">OID Test WebCona</a></td>
+   <td></td>
+   <td></td>
+   <td><a href="">OID Prod WebCon</a></td>
+   </tr>
+  
+  <tr>
+  <td></td>
+  <td></td>
+   <td><a href="http://lrt-kabaapp250.systems.wvu.edu:7001/console">KABA Test WebCon</a></td>
+   <td></td>
+   <td></td>
+   <td><a href="http://henery.systems.wvu.edu:7003/console">Esei Prod WebCon</a></td>
+  </tr>
+  
+  <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td><a href="http://lrp-kabaapp000.systems.wvu.edu:7001/console">KABA Prod WebCon</a></td>
+  </tr>
+  
+  </table>
+  </p> 
+</div>
+
+<div id="ECAMPUS" class="tabcontent">
+ <p>
+ <table  border "1" class "table">
+  <tr>
+    <th>DEV</th>
+    <th>PATCH</th>
+    <th>PROD</th>
+</tr>
+
+<tr>
+</td>
+<td><br><a href="https://ecamdev.wvu.edu/webapps/login/login.jsp ">EcamDev</a></br></td>
+<td><br><a href="https://ecamptch.wvu.edu/webapps/login/login.jsp ">Ecamptch</a></br></td>
+<td><br><a href="https://ecampus.wvu.edu/webapps/login/login.jsp">Ecamprod</a></br></td>
+</tr>
+
+  </table>
+  </p>
+</div>
+
+<div id="DEGREEWORKS" class="tabcontent">
+  
+<p>
+<table  border "1" class "table">
+  <tr>
+    <th>DEV</th>
+    <th>TEST</th>
+    <th>PATCH</th>
+	<th>PROD</th>
+  </tr>
+  
+  <tr>
+</td>
+<td><br><a href="https://dgdevtools.wvu.edu/dwshell/login.jsp">Dgdev Dwshell</a></br></td>
+<td><br><a href="https://dgtesttools.wvu.edu/DashboardServlet">Dgtest DashboardServlet</a></br></td>
+<td><br><a href="https://dgptchtools.wvu.edu/dwshell/login.jsp">Dgptch Dwshell</a></br></td>
+<td><br><a href="https://dgprodtools.wvu.edu/dwshell/login.jsp">Dgprod Dwshell</a></br></td>
+</tr>
+
+<tr> 
+<td><br><a href="https://dgdevtools.wvu.edu/DashboardServlet">Dgdev DashboardServlet</a></br></td>
+<td></td>
+<td><br><a href="https://dgptchtools.wvu.edu/DashboardServlet">Dgptch DashboardServlet</a></br></td>
+<td><br><a href="https://dgprodtools.wvu.edu/DashboardServlet">Dgprod DashboardServlet</a></br></td>
+</tr>
+</table>
+  </p></div>
+
+<script>
+function openEnv(evt, envName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(envName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+  </body>
+</html>
